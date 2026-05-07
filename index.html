@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Chaos klub — a German youth club for creativity, friendship, and movement." />
+    <title>Chaos klub</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Top Nav -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+          <a class="navbar-brand brand-mark" href="#top" aria-label="Chaos klub home">
+            <span class="brand-dot" aria-hidden="true"></span>
+            Chaos klub
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+              <li class="nav-item"><a class="nav-link" href="#members">Members</a></li>
+              <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-premium btn-sm" href="#register">Join the Club</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="top" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="bg-shape shape-1"></div>
+          <div class="bg-shape shape-2"></div>
+          <div class="bg-shape shape-3"></div>
+          <div class="grain"></div>
+        </div>
+
+        <div class="container hero-content">
+          <div class="row align-items-end g-4">
+            <div class="col-lg-8">
+              <p class="eyebrow text-uppercase mb-3">German Youth Club • Calm • Modern</p>
+              <h1 class="display-title mb-3">Chaos klub</h1>
+              <p class="lead-subtitle mb-4">
+                A space for creativity, friendship, and movement.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-premium btn-lg" href="#register">
+                  Join the Club
+                  <i class="bi bi-arrow-right-short ms-1" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-quiet btn-lg" href="#about">Explore</a>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="hero-panel glass">
+                <div class="d-flex align-items-start justify-content-between gap-3">
+                  <div>
+                    <p class="panel-kicker mb-1">Members are called</p>
+                    <p class="panel-title mb-2">The Chaos Crew</p>
+                    <p class="panel-note mb-0">
+                      A tight circle of students who create, play, and grow together.
+                    </p>
+                  </div>
+                  <span class="panel-badge" aria-hidden="true">DE</span>
+                </div>
+                <div class="panel-stats mt-4">
+                  <div class="stat">
+                    <div class="stat-value">4+</div>
+                    <div class="stat-label">Core activities</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">Weekly</div>
+                    <div class="stat-label">Meetups</div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat-value">Open</div>
+                    <div class="stat-label">New members</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section-pad">
+        <div class="container">
+          <div class="row align-items-start g-5">
+            <div class="col-lg-5">
+              <h2 class="section-title reveal">About Chaos klub</h2>
+              <p class="section-lead reveal">
+                We’re a youth club in Germany where students connect through activities,
+                teamwork, and creativity — calm energy, real friendships, and room to move.
+              </p>
+              <div class="about-note reveal">
+                <i class="bi bi-asterisk me-2 text-accent" aria-hidden="true"></i>
+                Minimal, premium, and welcoming — built for the Chaos Crew.
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <article class="mini-card reveal">
+                    <div class="mini-icon" aria-hidden="true"><i class="bi bi-people"></i></div>
+                    <h3 class="mini-title">Togetherness</h3>
+                    <p class="mini-text">Small teams, big support — everyone belongs.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="mini-card reveal">
+                    <div class="mini-icon" aria-hidden="true"><i class="bi bi-brush"></i></div>
+                    <h3 class="mini-title">Creativity</h3>
+                    <p class="mini-text">Theater, music, ideas — make something you love.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="mini-card reveal">
+                    <div class="mini-icon" aria-hidden="true"><i class="bi bi-lightning-charge"></i></div>
+                    <h3 class="mini-title">Energy</h3>
+                    <p class="mini-text">Badminton and swimming — movement without pressure.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="mini-card reveal">
+                    <div class="mini-icon" aria-hidden="true"><i class="bi bi-compass"></i></div>
+                    <h3 class="mini-title">Growth</h3>
+                    <p class="mini-text">Try, learn, repeat — build confidence quietly.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Activities -->
+      <section id="activities" class="section-pad section-soft">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+            <div>
+              <h2 class="section-title reveal">Activities Showcase</h2>
+              <p class="section-lead reveal mb-0">
+                Minimal, monochrome, and tactile — a grid that feels editorial.
+              </p>
+            </div>
+            <div class="pill reveal">
+              <i class="bi bi-dot me-2 text-accent" aria-hidden="true"></i>
+              Badminton • Chess • Swimming • Theater • Music
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <article class="activity-card reveal">
+                <div class="activity-media media-badminton" role="img" aria-label="Badminton"></div>
+                <div class="activity-body">
+                  <h3 class="activity-title">Badminton</h3>
+                  <p class="activity-text">Fast rallies, clean technique, and friendly matches.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="activity-card reveal">
+                <div class="activity-media media-chess" role="img" aria-label="Chess"></div>
+                <div class="activity-body">
+                  <h3 class="activity-title">Chess</h3>
+                  <p class="activity-text">Quiet focus, sharp strategy — from beginners to rivals.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="activity-card reveal">
+                <div class="activity-media media-swimming" role="img" aria-label="Swimming"></div>
+                <div class="activity-body">
+                  <h3 class="activity-title">Swimming</h3>
+                  <p class="activity-text">Smooth laps, better endurance, and calm confidence.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="activity-card reveal">
+                <div class="activity-media media-theater" role="img" aria-label="Theater"></div>
+                <div class="activity-body">
+                  <h3 class="activity-title">Theater</h3>
+                  <p class="activity-text">Stage nights, storytelling, and fearless self-expression.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="activity-card reveal">
+                <div class="activity-media media-music" role="img" aria-label="Music"></div>
+                <div class="activity-body">
+                  <h3 class="activity-title">Music</h3>
+                  <p class="activity-text">Sessions that feel like a studio — warm, intentional, alive.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="activity-card reveal">
+                <div class="activity-media media-open" role="img" aria-label="Open Studio"></div>
+                <div class="activity-body">
+                  <h3 class="activity-title">Open Studio</h3>
+                  <p class="activity-text">Bring your idea. We’ll build it together, step by step.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration -->
+      <section id="register" class="section-pad">
+        <div class="container">
+          <div class="row align-items-start g-5">
+            <div class="col-lg-5">
+              <h2 class="section-title reveal">Registration</h2>
+              <p class="section-lead reveal">
+                A premium, modern form — minimal fields, smooth focus, and a calm success moment.
+              </p>
+              <div class="callout reveal">
+                <div class="callout-line"></div>
+                <p class="mb-0">
+                  Prefer a gentle vibe? You’re in the right place. We’ll reply by email.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="form-shell glass reveal">
+                <form id="registrationForm" class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input class="form-control" id="regName" name="name" type="text" placeholder="Name" required />
+                        <label for="regName">Name</label>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input class="form-control" id="regEmail" name="email" type="email" placeholder="Email" required />
+                        <label for="regEmail">Email</label>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-floating">
+                        <input class="form-control" id="regAge" name="age" type="number" min="10" max="25" placeholder="Age" required />
+                        <label for="regAge">Age</label>
+                        <div class="invalid-feedback">Please enter an age (10–25).</div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="form-floating">
+                        <select class="form-select" id="regInterest" name="interest" required>
+                          <option value="" selected disabled>Select an activity</option>
+                          <option>Badminton</option>
+                          <option>Chess</option>
+                          <option>Swimming</option>
+                          <option>Theater</option>
+                          <option>Music</option>
+                          <option>Open Studio</option>
+                        </select>
+                        <label for="regInterest">Activity Interest</label>
+                        <div class="invalid-feedback">Please select an activity.</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="Short introduction"
+                          id="regIntro"
+                          name="intro"
+                          style="height: 140px"
+                          required
+                        ></textarea>
+                        <label for="regIntro">Short Introduction</label>
+                        <div class="invalid-feedback">Tell us a little about you.</div>
+                      </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center justify-content-between gap-3">
+                      <button class="btn btn-premium btn-lg" type="submit">
+                        Send Registration
+                      </button>
+                      <div class="form-privacy">
+                        <i class="bi bi-shield-check me-2" aria-hidden="true"></i>
+                        Your details stay private.
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <div id="successPanel" class="success-panel" role="status" aria-live="polite" hidden>
+                  <div class="success-mark" aria-hidden="true">
+                    <svg viewBox="0 0 52 52" width="52" height="52">
+                      <circle class="success-circle" cx="26" cy="26" r="24" fill="none" />
+                      <path
+                        class="success-check"
+                        fill="none"
+                        d="M14 27 L22 35 L38 18"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="success-title">Welcome to the Chaos Crew.</div>
+                    <div class="success-text">We’ll reach out soon — keep creating.</div>
+                  </div>
+                  <button id="successReset" class="btn btn-quiet btn-sm ms-auto" type="button">
+                    Send another
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Members -->
+      <section id="members" class="section-pad section-soft">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+            <div>
+              <h2 class="section-title reveal">Members</h2>
+              <p class="section-lead reveal mb-0">
+                An editorial, grayscale lineup — calm portraits and clean typography.
+              </p>
+            </div>
+            <div class="pill reveal">
+              <i class="bi bi-stars me-2 text-accent" aria-hidden="true"></i>
+              Chaos Crew highlights
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+              <article class="member-card reveal">
+                <img class="member-avatar" alt="Mira K." src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='30%25' r='75%25'%3E%3Cstop offset='0%25' stop-color='%23f4f0e9'/%3E%3Cstop offset='100%25' stop-color='%23424242'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='160' height='160' fill='url(%23g)'/%3E%3Ccircle cx='80' cy='80' r='62' fill='rgba(0,0,0,0.28)'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Inter, Arial' font-size='44' fill='%23f7f4ef'%3EMK%3C/text%3E%3C/svg%3E" />
+                <div class="member-body">
+                  <div class="member-name">Mira K.</div>
+                  <div class="member-role">Theater • Music</div>
+                </div>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <article class="member-card reveal">
+                <img class="member-avatar" alt="Jonas F." src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cdefs%3E%3CradialGradient id='g' cx='60%25' cy='35%25' r='75%25'%3E%3Cstop offset='0%25' stop-color='%23f4f0e9'/%3E%3Cstop offset='100%25' stop-color='%233a3a3a'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='160' height='160' fill='url(%23g)'/%3E%3Ccircle cx='80' cy='80' r='62' fill='rgba(0,0,0,0.3)'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Inter, Arial' font-size='44' fill='%23f7f4ef'%3EJF%3C/text%3E%3C/svg%3E" />
+                <div class="member-body">
+                  <div class="member-name">Jonas F.</div>
+                  <div class="member-role">Chess • Strategy</div>
+                </div>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <article class="member-card reveal">
+                <img class="member-avatar" alt="Lea S." src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cdefs%3E%3CradialGradient id='g' cx='40%25' cy='25%25' r='80%25'%3E%3Cstop offset='0%25' stop-color='%23f4f0e9'/%3E%3Cstop offset='100%25' stop-color='%232f2f2f'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='160' height='160' fill='url(%23g)'/%3E%3Ccircle cx='80' cy='80' r='62' fill='rgba(0,0,0,0.28)'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Inter, Arial' font-size='44' fill='%23f7f4ef'%3ELS%3C/text%3E%3C/svg%3E" />
+                <div class="member-body">
+                  <div class="member-name">Lea S.</div>
+                  <div class="member-role">Swimming • Calm</div>
+                </div>
+              </article>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <article class="member-card reveal">
+                <img class="member-avatar" alt="Emil A." src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cdefs%3E%3CradialGradient id='g' cx='55%25' cy='30%25' r='80%25'%3E%3Cstop offset='0%25' stop-color='%23f4f0e9'/%3E%3Cstop offset='100%25' stop-color='%23444444'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='160' height='160' fill='url(%23g)'/%3E%3Ccircle cx='80' cy='80' r='62' fill='rgba(0,0,0,0.29)'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='Inter, Arial' font-size='44' fill='%23f7f4ef'%3EEA%3C/text%3E%3C/svg%3E" />
+                <div class="member-body">
+                  <div class="member-name">Emil A.</div>
+                  <div class="member-role">Badminton • Team</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events -->
+      <section id="events" class="section-pad">
+        <div class="container">
+          <div class="row align-items-end justify-content-between g-4 mb-4">
+            <div class="col-lg-7">
+              <h2 class="section-title reveal">Events</h2>
+              <p class="section-lead reveal mb-0">
+                A clean timeline for tournaments, sessions, and nights that feel unforgettable.
+              </p>
+            </div>
+            <div class="col-lg-5 text-lg-end">
+              <div class="pill reveal d-inline-flex">
+                <i class="bi bi-calendar3 me-2 text-accent" aria-hidden="true"></i>
+                Seasonal program (example)
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline reveal">
+            <div class="timeline-line" aria-hidden="true">
+              <svg viewBox="0 0 2 400" preserveAspectRatio="none">
+                <path id="timelinePath" d="M1 0 V400" />
+              </svg>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">Tournament</div>
+                <h3 class="timeline-title">Badminton Mini-Cup</h3>
+                <p class="timeline-text">Friendly brackets, clean rules, and a calm crowd.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">Music sessions</div>
+                <h3 class="timeline-title">Studio Evening</h3>
+                <p class="timeline-text">Warm tones, loops, live instruments — soft & focused.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">Theater night</div>
+                <h3 class="timeline-title">Stage & Stories</h3>
+                <p class="timeline-text">Short plays, monologues, and bold new voices.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-meta">Competition</div>
+                <h3 class="timeline-title">Chess Ladder</h3>
+                <p class="timeline-text">Weekly games with gentle rivalry and quick learning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dedication -->
+      <section class="dedication">
+        <div class="dedication-bg" aria-hidden="true">
+          <div class="dedication-blur"></div>
+          <div class="grain"></div>
+        </div>
+        <div class="container">
+          <div class="dedication-card glass reveal">
+            <p class="dedication-text mb-0">
+              Built on friendship, creativity, and unforgettable moments.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <div class="footer-brand">
+              <span class="brand-dot" aria-hidden="true"></span>
+              Chaos klub
+            </div>
+            <p class="footer-text mb-0">
+              Minimal, modern, and artistic — a calm place for the Chaos Crew in Germany.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-title">Contact</div>
+            <ul class="footer-list">
+              <li><i class="bi bi-envelope me-2" aria-hidden="true"></i> hello@chaosklub.example</li>
+              <li><i class="bi bi-geo-alt me-2" aria-hidden="true"></i> Germany</li>
+              <li><i class="bi bi-clock me-2" aria-hidden="true"></i> Weekly meetups</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-title">Social</div>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="social-link" href="#top" aria-label="Instagram">
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+              <a class="social-link" href="#top" aria-label="TikTok">
+                <i class="bi bi-tiktok" aria-hidden="true"></i>
+              </a>
+              <a class="social-link" href="#top" aria-label="YouTube">
+                <i class="bi bi-youtube" aria-hidden="true"></i>
+              </a>
+              <a class="social-link" href="#top" aria-label="Email">
+                <i class="bi bi-send" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="footer-bottom mt-4">
+              <span>© <span id="year"></span> Chaos klub</span>
+              <span class="footer-sep" aria-hidden="true">•</span>
+              <a class="footer-link" href="#register">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
