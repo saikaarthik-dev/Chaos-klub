@@ -313,8 +313,13 @@ a{color:inherit}
 }
 .activity-media{
   height:160px;
-  background:linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.02));
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.20), rgba(0,0,0,.62)),
+    linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
   position:relative;
+  background-size:cover;
+  background-position:center;
+  filter:grayscale(1) contrast(1.08) saturate(.85) brightness(.92);
 }
 .activity-media::after{
   content:"";
@@ -323,35 +328,41 @@ a{color:inherit}
   mix-blend-mode:screen;
   opacity:.75;
 }
-.media-badminton{background-image:
-  radial-gradient(220px 140px at 22% 40%, rgba(216,74,58,.18), transparent 60%),
-  radial-gradient(220px 160px at 80% 30%, rgba(246,242,235,.10), transparent 62%),
-  linear-gradient(135deg, rgba(255,255,255,.07), rgba(255,255,255,.02));
+.media-badminton{
+  background-image:
+    radial-gradient(240px 170px at 18% 45%, rgba(216,74,58,.14), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.62)),
+    url("./assets/img/badminton.jpeg");
 }
-.media-chess{background-image:
-  radial-gradient(220px 160px at 18% 40%, rgba(246,242,235,.10), transparent 60%),
-  radial-gradient(220px 160px at 72% 65%, rgba(216,74,58,.12), transparent 62%),
-  linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+.media-chess{
+  background-image:
+    radial-gradient(240px 170px at 22% 35%, rgba(246,242,235,.10), transparent 62%),
+    linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.66)),
+    url("./assets/img/chess.jpeg");
 }
-.media-swimming{background-image:
-  radial-gradient(260px 170px at 30% 50%, rgba(246,242,235,.10), transparent 60%),
-  radial-gradient(220px 160px at 82% 40%, rgba(255,255,255,.06), transparent 62%),
-  linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+.media-swimming{
+  background-image:
+    radial-gradient(260px 180px at 20% 40%, rgba(246,242,235,.10), transparent 62%),
+    linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.64)),
+    url("./assets/img/swimming.jpeg");
 }
-.media-theater{background-image:
-  radial-gradient(260px 170px at 28% 55%, rgba(216,74,58,.14), transparent 62%),
-  radial-gradient(240px 160px at 75% 35%, rgba(246,242,235,.08), transparent 62%),
-  linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+.media-theater{
+  background-image:
+    radial-gradient(260px 180px at 26% 55%, rgba(216,74,58,.12), transparent 64%),
+    linear-gradient(180deg, rgba(0,0,0,.16), rgba(0,0,0,.70)),
+    url("./assets/img/theater.jpeg");
 }
-.media-music{background-image:
-  radial-gradient(260px 170px at 24% 40%, rgba(246,242,235,.09), transparent 62%),
-  radial-gradient(220px 160px at 78% 60%, rgba(216,74,58,.12), transparent 62%),
-  linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+.media-music{
+  background-image:
+    radial-gradient(260px 180px at 75% 55%, rgba(216,74,58,.12), transparent 64%),
+    linear-gradient(180deg, rgba(0,0,0,.14), rgba(0,0,0,.70)),
+    url("./assets/img/music.jpeg");
 }
-.media-open{background-image:
-  radial-gradient(260px 170px at 26% 50%, rgba(246,242,235,.07), transparent 62%),
-  radial-gradient(240px 160px at 78% 35%, rgba(255,255,255,.06), transparent 62%),
-  linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+.media-open{
+  background-image:
+    radial-gradient(260px 180px at 25% 35%, rgba(246,242,235,.10), transparent 64%),
+    linear-gradient(180deg, rgba(0,0,0,.14), rgba(0,0,0,.70)),
+    url("./assets/img/open-studio.jpeg");
 }
 .activity-body{padding:18px 18px 16px}
 .activity-title{
@@ -531,6 +542,50 @@ select.form-select:-webkit-autofill:focus{
 }
 .timeline-title{margin:0 0 6px; font-weight:780; letter-spacing:-0.03em}
 .timeline-text{margin:0; color:rgba(246,242,235,.68); line-height:1.65}
+
+/* Comments */
+.comment-card{
+  height:100%;
+  padding:20px 18px 18px;
+  border-radius:22px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.02);
+  box-shadow:0 18px 55px rgba(0,0,0,.20);
+  transition:transform .26s var(--ease), border-color .26s var(--ease), background .26s var(--ease);
+}
+.comment-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(255,255,255,.16);
+  background:rgba(255,255,255,.03);
+}
+.comment-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+.comment-avatar{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  filter:grayscale(1) contrast(1.05);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 16px 36px rgba(0,0,0,.32);
+}
+.comment-name{
+  font-weight:780;
+  letter-spacing:-0.02em;
+}
+.comment-tag{
+  color:rgba(246,242,235,.60);
+  font-size:.92rem;
+}
+.comment-text{
+  color:rgba(246,242,235,.70);
+  line-height:1.75;
+  font-size:1.02rem;
+  max-width:70ch;
+}
 
 /* Dedication */
 .dedication{
